@@ -1,0 +1,131 @@
+/*Style guide*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --clr-primary-red: hsl(0, 100%, 74%);
+    --clr-primary-green: hsl(154, 59%, 51%);
+    --clr-accent-blue: hsl(248, 32%, 49%);
+    --clr-neutral-dark-blue: hsl(249, 10%, 26%);
+    --clr-neutral-grayish-blue: hsl(246, 25%, 77%);
+    --ff: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--clr-primary-red);
+    margin: 0vw;
+    font-family: var(--ff);
+    display: flex;
+    flex-direction: column
+}
+
+
+/* Mobile view: 375px*/
+.container {
+    background-image: url(images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 0vw 8vw;
+}
+
+.top-part {
+    margin: 16vw 0vw;
+}
+
+.banner {
+    padding: 4vw 16vw;
+    background-color: var(--clr-accent-blue);
+    border-radius: 3vw;
+    font-weight: 600;
+    box-shadow: 0vw 2vw rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    font-weight: 400
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    margin: 8vw 0vw;
+    padding: 8vw;
+    background-color: white;
+    border-radius: 3vw;
+    box-shadow: 0vw 2vw rgba(0, 0, 0, 0.1);
+}
+
+::placeholder {
+    font-weight: 700;
+    font-family: var(--ff);
+}
+
+.input {
+    margin-bottom: 4vw;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 4vw;
+    border-radius: 1vw;
+    border: 1px solid var(--clr-neutral-grayish-blue);
+}
+
+.error-icon {
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    margin: 2.5vw 0vw 0vw 58vw;
+    display: none;
+} 
+
+.error-msg {
+    color: red;
+    text-align: right;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 0.7em;
+    margin: 1vw 0vw 0vw 0vw;
+    display: none;
+}
+
+.claim {
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--clr-primary-green);
+    box-shadow: 0vw 1vw hsl(154, 59%,41%);
+    border: none;
+    font-weight: 700;
+    padding: 4vw 8vw;
+    border-radius: 1vw;
+    margin-bottom: 4vw;
+}
+
+.disclaimer {
+    color: var(--clr-neutral-grayish-blue);
+    font-weight: 700;
+    font-size: 0.7em
+}
+
+.terms {
+    color: var(--clr-primary-red)
+}
+
+/* Error displays */
+input .error {
+    border: 2px solid red;
+    color: red;
+}
+
+.error-icon .error {
+    display: flex;
+}
+
+.error-msg .error {
+    display: block;
+} 
+
+/* Desktop view: 1440px*/
