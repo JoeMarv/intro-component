@@ -115,16 +115,16 @@ input {
 }
 
 /* Error displays */
-input .error {
+input.error {
     border: 2px solid red;
     color: red;
 }
 
-.error-icon .error {
+.error-icon.error {
     display: flex;
 }
 
-.error-msg .error {
+.error-msg.error {
     display: block;
 } 
 

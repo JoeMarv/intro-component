@@ -1,32 +1,25 @@
-const form = document.querySelector('.sign')
-const fName = document.querySelector('.fname')
-const lName = document.querySelector('.lname')
-const email = document.querySelector('.email')
-const password = document.querySelector('.password')
+const inputs = document.querySelectorAll('input')
+const btn = document.querySelector('.claim')
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
 
-    var fNameValue = fName.value.trim()
-    var lNameValue = lName.value.trim()
-    var emailValue = email.value.trim()
-    var passwordValue = password.value.trim()
 
-    //error add
 
-    if(fNameValue === '') {
-        fName.parentElement.classList.add('error')
-    }
+inputs.forEach(function(input) {  
+   btn.addEventListener('click', function() {
+        const inputValue = input.value.trim()
+        const img = input.parentElement.querySelector('.error-icon')
+        const msg = input.parentElement.querySelector('.error-msg')
+    
+        console.log(img)
 
-    if(lNameValue === '') {
-        lName.parentElement.classList.add('error')
-    }
-
-    if(emailValue === '') {
-        email.parentElement.classList.add('error')
-    }
-
-    if(passwordValue === '') {
-        password.parentElement.classList.add('error')
-    }
-})
+        if (inputValue === '') {
+            input.classList.add('error')
+            img.classList.add('error')
+            msg.classList.add('error')
+        } else {
+            input.classList.remove('error')
+            img.classList.remove('error')
+            msg.classList.remove('error')
+        }
+   })
+});
