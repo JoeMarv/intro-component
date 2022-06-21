@@ -129,3 +129,86 @@ input.error {
 } 
 
 /* Desktop view: 1440px*/
+@media only screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        background-image: url(images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+
+    .top-part {
+        margin: 16vw 0vw 0vw 2vw;
+        width: 35vw
+    }
+
+    .head-header {
+        font-size: 1.2em
+    }
+
+    .mid-part {
+        margin: 8vw 0vw 8vw 0vw;
+        width: 44vw
+    }
+
+    .banner {
+        padding: 1vw 4vw;
+        border-radius: 0.5vw;
+        text-align: center;
+        box-shadow: none;
+        box-shadow: 0vw 8px rgba(0,0,0,0.1)
+    }
+
+    .sign-up{
+        padding: 4vw;
+        border-radius: 0.5vw;
+        margin: 2vw 0vw 0vw 0vw;
+        box-shadow: none;
+        box-shadow: 0vw 8px rgba(0,0,0,0.1)
+    }
+
+    .input {
+        margin-bottom: 1.5vw;
+    }
+
+    input {
+        padding: 1vw 2vw;
+        margin: 0vw 0vw 0vw 0vw;
+        border-radius: 0.5vw
+    }
+
+    .error-icon {
+        width: 2vw;
+        height: 2vw;
+        top: 18.25vw;
+        left: 85vw;
+        margin: 0vw
+    }
+
+    .error-msg {
+        margin-top: 1vw
+    }
+
+    .claim {
+        padding: 1vw 4vw;
+        box-shadow: 0vw 4px hsl(154, 59%,41%);
+        border-radius: 0.5vw;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-bottom: 2vw;
+    }
+
+    .claim:hover {
+        cursor: pointer;
+        background-color: hsl(154, 59%,61%);
+        transition: 0.3s
+    }
+
+    .disclaimer {
+        text-align: center;
+        margin: 0vw 0vw 0vw 0vw;
+    }
+}
